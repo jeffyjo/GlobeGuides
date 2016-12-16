@@ -57,5 +57,10 @@ class ExtraMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         return cell!
     }
     
+    func updateUI(){
+        dayLbl.text = currentWeather._date
+        //timeLbl.text = currentWeather.
+        tempLbl.text = "\(currentWeather._currentTemp)"
+    }
     
 }

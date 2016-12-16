@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C781F742F106F96F4A8872E3 /* Pods_GlobeGuides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9BE14E3999D6A605574EDED /* Pods_GlobeGuides.framework */; };
+		A75F700E1D1D6C57F08F368B /* Pods_GlobeGuides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144368FF24535C27CE152003 /* Pods_GlobeGuides.framework */; };
 		D811B92D1DF5938F00E18F15 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D811B92C1DF5938F00E18F15 /* fontawesome-webfont.ttf */; };
 		D827D12E1DFF466A0087625B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D827D12D1DFF466A0087625B /* Main.storyboard */; };
 		D82BE9E41DF6290C00DC6880 /* TravelGuidesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82BE9E31DF6290C00DC6880 /* TravelGuidesVC.swift */; };
@@ -51,9 +51,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		144368FF24535C27CE152003 /* Pods_GlobeGuides.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobeGuides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		162F0FC1BCAF15476F54E20C /* Pods-GlobeGuides.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobeGuides.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlobeGuides/Pods-GlobeGuides.release.xcconfig"; sourceTree = "<group>"; };
 		2DDE701EE1B283B90D88AB55 /* Pods-GlobeGuides.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobeGuides.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GlobeGuides/Pods-GlobeGuides.debug.xcconfig"; sourceTree = "<group>"; };
-		C9BE14E3999D6A605574EDED /* Pods_GlobeGuides.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobeGuides.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D811B92C1DF5938F00E18F15 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 		D827D12D1DFF466A0087625B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D82BE9E31DF6290C00DC6880 /* TravelGuidesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelGuidesVC.swift; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 			files = (
 				D8FCE3A41E03696100CF4D49 /* Alamofire.framework in Frameworks */,
 				D8FCE3A51E03696100CF4D49 /* Font_Awesome_Swift.framework in Frameworks */,
-				C781F742F106F96F4A8872E3 /* Pods_GlobeGuides.framework in Frameworks */,
+				A75F700E1D1D6C57F08F368B /* Pods_GlobeGuides.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +259,7 @@
 			children = (
 				D8FCE3A21E03696100CF4D49 /* Alamofire.framework */,
 				D8FCE3A31E03696100CF4D49 /* Font_Awesome_Swift.framework */,
-				C9BE14E3999D6A605574EDED /* Pods_GlobeGuides.framework */,
+				144368FF24535C27CE152003 /* Pods_GlobeGuides.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

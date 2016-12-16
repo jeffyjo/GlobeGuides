@@ -11,8 +11,8 @@ import Foundation
 //http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=79b79466ce5da727349781fe319ffab0
 
 let BASE_URL = "http://api.openweathermap.org/data/2.5/weather?"
-let CITY = "London"
-let COUNTRY = "uk"
+let CITY = "Paris"
+let COUNTRY = "france"
 let APIKEY = "79b79466ce5da727349781fe319ffab0"
 
 typealias DonwloadComplete = () -> ()
