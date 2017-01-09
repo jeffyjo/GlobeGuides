@@ -16,14 +16,12 @@ class MainVC: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     
-    @IBOutlet weak var guru1View: UIView!
-    @IBOutlet weak var nameLbl: UILabel!
-    @IBOutlet weak var ageLbl: UILabel!
-    @IBOutlet weak var occupationLbl: UILabel!
-    @IBOutlet weak var socialLbl: UILabel!
-    
     var images = [UIImageView]()
     var swipeValue = 0
+    
+    
+    
+    //var gurus
     
     override func viewDidLoad() {
         super.viewDidLoad()

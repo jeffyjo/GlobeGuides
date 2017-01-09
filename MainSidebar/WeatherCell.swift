@@ -11,9 +11,7 @@ import UIKit
 class WeatherCell: UITableViewCell {
 
     @IBOutlet weak var weatherImg: UIImageView!
-    
     @IBOutlet weak var weatherDayLbl: UILabel!
-    
     @IBOutlet weak var weatherTempLbl: UILabel!
     
     override func awakeFromNib() {
@@ -25,6 +23,13 @@ class WeatherCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func configureCell(foreCast: WeatherForecast){
+        weatherImg.image = UIImage(named: "\(foreCast.weatherType) Mini")
+        weatherDayLbl.text = foreCast.date
+        weatherTempLbl.text = "\(foreCast.forecastTemp) °C"
+        
     }
 
 }

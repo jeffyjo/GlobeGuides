@@ -7,10 +7,7 @@
 //
 
 import UIKit
-
-protocol WeatherServiceDelegate{
-    func setWeather(weather: Weather)
-}
+import Alamofire
 
 class ExtraMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -23,7 +20,10 @@ class ExtraMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     @IBOutlet weak var weatherTableView: UITableView!
     
     
-    var currentWeather = CurrentWeather()
+    var currentWeather: CurrentWeather!
+    
+    var forecast: WeatherForecast!
+    var forecasts: [WeatherForecast]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,11 +31,42 @@ class ExtraMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         weatherTableView.delegate = self
         weatherTableView.dataSource = self
         
+        currentWeather = CurrentWeather()
+        forecast = WeatherForecast()
+        forecasts = [WeatherForecast]()
+        
         currentWeather.downloadWeatherDetails {
             //Setup UI to download data
+            self.downloadForecastData {
+                self.updateUI()
+            }
         }
+    }
+    
+    func downloadForecastData(completed: @escaping DonwloadComplete){
+        //Downloading forecast weather data for TableView
         
-        
+        let forecastURL = URL(string: FORECAST_WEATHER_URL)!
+        Alamofire.request(forecastURL).responseJSON { response in
+            let result = response.result
+            
+            if let dict = result.value as? Dictionary<String, AnyObject> {
+                
+                if let list = dict["list"] as? [Dictionary<String, AnyObject>] {
+                    
+                    print(list)
+                    
+                    for obj in list {
+                        let forecast = WeatherForecast(weatherDict: obj)
+                        self.forecasts.append(forecast)
+                    }
+                    
+                    self.forecasts.remove(at: 0)
+                    self.weatherTableView.reloadData()
+                }
+            }
+            completed()
+        }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -43,24 +74,28 @@ class ExtraMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return forecasts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath) as? WeatherCell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath) as? WeatherCell {
         
-        //cell?.weatherImg
-        cell?.weatherDayLbl.text = "Day"
-        cell?.weatherTempLbl.text = "temp"
+            let forecast = forecasts[indexPath.row]
+            cell.configureCell(foreCast: forecast)
         
-        return cell!
+        return cell
+            
+        } else {
+        
+            return WeatherCell()
+        }
     }
     
     func updateUI(){
-        dayLbl.text = currentWeather._date
-        //timeLbl.text = currentWeather.
-        tempLbl.text = "\(currentWeather._currentTemp)"
+        dayLbl.text = currentWeather.date
+        timeLbl.text = currentWeather.time
+        tempLbl.text = "\(currentWeather.currentTemp) °C"
+        weatherImgView.image = UIImage(named: currentWeather.weatherType)
     }
-    
 }
