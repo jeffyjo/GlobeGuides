@@ -11,6 +11,7 @@
 		D811B92D1DF5938F00E18F15 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D811B92C1DF5938F00E18F15 /* fontawesome-webfont.ttf */; };
 		D827D12E1DFF466A0087625B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D827D12D1DFF466A0087625B /* Main.storyboard */; };
 		D82BE9E41DF6290C00DC6880 /* TravelGuidesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82BE9E31DF6290C00DC6880 /* TravelGuidesVC.swift */; };
+		D82C213F1E0444330074FF4E /* WeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82C213E1E0444330074FF4E /* WeatherForecast.swift */; };
 		D831188C1DF3B2AA00356E44 /* LearnTheLingoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D831188B1DF3B2AA00356E44 /* LearnTheLingoVC.swift */; };
 		D851EA671DFC392100D06B33 /* WhatToDoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D851EA661DFC392100D06B33 /* WhatToDoVC.swift */; };
 		D851EA6B1DFC5F6900D06B33 /* WhatToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D851EA6A1DFC5F6900D06B33 /* WhatToDoCell.swift */; };
@@ -47,6 +48,7 @@
 		D8F97DB11DF39AFB00FF76B4 /* MonthlyPickVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F97DB01DF39AFB00FF76B4 /* MonthlyPickVC.swift */; };
 		D8FCE3A41E03696100CF4D49 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8FCE3A21E03696100CF4D49 /* Alamofire.framework */; };
 		D8FCE3A51E03696100CF4D49 /* Font_Awesome_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8FCE3A31E03696100CF4D49 /* Font_Awesome_Swift.framework */; };
+		D8FFF5731E0AB27B0001926B /* GuruCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FFF5721E0AB27B0001926B /* GuruCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,7 @@
 		D811B92C1DF5938F00E18F15 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 		D827D12D1DFF466A0087625B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D82BE9E31DF6290C00DC6880 /* TravelGuidesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelGuidesVC.swift; sourceTree = "<group>"; };
+		D82C213E1E0444330074FF4E /* WeatherForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherForecast.swift; path = ../../MainSideBar/MainSideBar/WeatherForecast.swift; sourceTree = "<group>"; };
 		D831188B1DF3B2AA00356E44 /* LearnTheLingoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnTheLingoVC.swift; sourceTree = "<group>"; };
 		D851EA661DFC392100D06B33 /* WhatToDoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatToDoVC.swift; sourceTree = "<group>"; };
 		D851EA6A1DFC5F6900D06B33 /* WhatToDoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatToDoCell.swift; sourceTree = "<group>"; };
@@ -96,6 +99,7 @@
 		D8F97DB01DF39AFB00FF76B4 /* MonthlyPickVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthlyPickVC.swift; sourceTree = "<group>"; };
 		D8FCE3A21E03696100CF4D49 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/MainSidebar-gyqtbvhkmxjywsfxrlvvjccpbyhb/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		D8FCE3A31E03696100CF4D49 /* Font_Awesome_Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Font_Awesome_Swift.framework; path = "../../../Library/Developer/Xcode/DerivedData/MainSidebar-gyqtbvhkmxjywsfxrlvvjccpbyhb/Build/Products/Debug-iphonesimulator/Font-Awesome-Swift/Font_Awesome_Swift.framework"; sourceTree = "<group>"; };
+		D8FFF5721E0AB27B0001926B /* GuruCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuruCollectionViewCell.swift; path = ../../MainSideBar/MainSideBar/GuruCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +204,7 @@
 				D811B92C1DF5938F00E18F15 /* fontawesome-webfont.ttf */,
 				D8A342931E03558F00819F7D /* WeatherConstants.swift */,
 				D8A342951E03583A00819F7D /* CurrentWeather.swift */,
+				D82C213E1E0444330074FF4E /* WeatherForecast.swift */,
 			);
 			name = GlobeGuides;
 			path = MainSidebar;
@@ -247,6 +252,7 @@
 				D8D01C8F1DE32EAD007948B1 /* MenuItemCell.swift */,
 				D851EA6A1DFC5F6900D06B33 /* WhatToDoCell.swift */,
 				D85C09DA1E00241A00702706 /* WeatherCell.swift */,
+				D8FFF5721E0AB27B0001926B /* GuruCollectionViewCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -389,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D86CFD951DE2383F00A5101D /* MenuController.swift in Sources */,
+				D82C213F1E0444330074FF4E /* WeatherForecast.swift in Sources */,
 				D831188C1DF3B2AA00356E44 /* LearnTheLingoVC.swift in Sources */,
 				D8A342961E03583A00819F7D /* CurrentWeather.swift in Sources */,
 				D85C09DB1E00241B00702706 /* WeatherCell.swift in Sources */,
@@ -406,6 +413,7 @@
 				D8F90A191DF46E6100601894 /* YourTripVC.swift in Sources */,
 				D851EA791DFC80E200D06B33 /* CitiesTableCell.swift in Sources */,
 				D8F97DB11DF39AFB00FF76B4 /* MonthlyPickVC.swift in Sources */,
+				D8FFF5731E0AB27B0001926B /* GuruCollectionViewCell.swift in Sources */,
 				D85BEF771DEE5037003F0267 /* Extensions.swift in Sources */,
 				D8D01C901DE32EAD007948B1 /* MenuItemCell.swift in Sources */,
 				D8F90A1B1DF46ED200601894 /* MapVC.swift in Sources */,
