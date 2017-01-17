@@ -36,7 +36,6 @@
 		D86CFD951DE2383F00A5101D /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86CFD941DE2383F00A5101D /* MenuController.swift */; };
 		D8A342941E03558F00819F7D /* WeatherConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A342931E03558F00819F7D /* WeatherConstants.swift */; };
 		D8A342961E03583A00819F7D /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A342951E03583A00819F7D /* CurrentWeather.swift */; };
-		D8C954801E03DE9B00B30C52 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9547F1E03DE9B00B30C52 /* Weather.swift */; };
 		D8D01C901DE32EAD007948B1 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D01C8F1DE32EAD007948B1 /* MenuItemCell.swift */; };
 		D8DB18161E03F2F000A51DFA /* MenuItemPreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DB18151E03F2F000A51DFA /* MenuItemPreCell.swift */; };
 		D8F90A131DF46AEC00601894 /* NiceToKnowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F90A121DF46AEC00601894 /* NiceToKnowVC.swift */; };
@@ -86,7 +85,6 @@
 		D86CFD941DE2383F00A5101D /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		D8A342931E03558F00819F7D /* WeatherConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherConstants.swift; sourceTree = "<group>"; };
 		D8A342951E03583A00819F7D /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
-		D8C9547F1E03DE9B00B30C52 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Weather.swift; path = ../../../../.Trash/Weather.swift; sourceTree = "<group>"; };
 		D8D01C8F1DE32EAD007948B1 /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
 		D8DB18151E03F2F000A51DFA /* MenuItemPreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemPreCell.swift; sourceTree = "<group>"; };
 		D8F90A121DF46AEC00601894 /* NiceToKnowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiceToKnowVC.swift; sourceTree = "<group>"; };
@@ -200,7 +198,6 @@
 				D86CFD881DE232CD00A5101D /* Info.plist */,
 				D86CFD801DE232CD00A5101D /* MainSidebar.xcdatamodeld */,
 				D811B92C1DF5938F00E18F15 /* fontawesome-webfont.ttf */,
-				D8C9547F1E03DE9B00B30C52 /* Weather.swift */,
 				D8A342931E03558F00819F7D /* WeatherConstants.swift */,
 				D8A342951E03583A00819F7D /* CurrentWeather.swift */,
 			);
@@ -294,7 +291,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Jeff Jørgensen";
 				TargetAttributes = {
 					D86CFD751DE232CD00A5101D = {
@@ -416,7 +413,6 @@
 				D8F90A131DF46AEC00601894 /* NiceToKnowVC.swift in Sources */,
 				D86CFD931DE2335E00A5101D /* SWRevealViewController.m in Sources */,
 				D851EA6B1DFC5F6900D06B33 /* WhatToDoCell.swift in Sources */,
-				D8C954801E03DE9B00B30C52 /* Weather.swift in Sources */,
 				D851EA7C1DFC80E200D06B33 /* AboutUsPreVC.swift in Sources */,
 				D851EA771DFC80E200D06B33 /* SoMePreVC.swift in Sources */,
 				D8F90A1D1DF4981500601894 /* ExtraMenuVC.swift in Sources */,
